@@ -1,10 +1,7 @@
 mod input_wrapper;
 extern crate serde;
 use serde_json;
-use serde_derive::{Serialize, Deserialize};
-use std::env;
 use std::fs;
-use std::collections::HashMap;
 use std::io::Result;
 use input_wrapper::get_input;
 
