@@ -4,6 +4,8 @@ use serde_json;
 use std::fs;
 use std::io::Result;
 use input_wrapper::get_input;
+use std::time::Duration;
+use std::thread::sleep;
 
 //requires json structure
 // [
@@ -66,5 +68,9 @@ let img_vectors = vector_input.into_iter().map(|x| get_image(x.to_string()) ).co
 let img_string = img_vectors.join(", ");
 println!("{}",img_string);
 
+let time = Duration::from_secs(30);
+
+// sleep
+sleep(time);
 Ok(())
 }
